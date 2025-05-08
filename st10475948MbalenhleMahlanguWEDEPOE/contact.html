@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Harvest NPO - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Get in touch with Green Harvest NPO for inquiries, volunteering, and support opportunities.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F468000844%2Fphoto%2Fcontact-us-written.jpg%3Fs%3D1024x1024%26w%3Dis%26k%3D20%26c%3D_E6hFJU_MsJxVs9UxvB9FkXqrkDoSkXh9_NsOT_MWeE%3D&tbnid=nBE_SWy7AqvMSM&vet=10CAQQxiAoA2oXChMImIGz_r7DjAMVAAAAAB0AAAAAEAc..i&imgrefurl=https%3A%2F%2Fwww.istockphoto.com%2Fphoto%2Fcontact-us-written-gm468000844-60752784&docid=_Enu-UPhKJZ4xM&w=1024&h=576&itg=1&q=contact%20us%20pictures%20for%20website&ved=0CAQQxiAoA2oXChMImIGz_r7DjAMVAAAAAB0AAAAAEAc');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            color: #333;
+        }
+        header {
+            background-color: rgba(44, 110, 73, 0.9);
+            color: rgb(242, 247, 242);
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: rgb(178, 197, 167);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact {
+            padding: 30px;
+            text-align: center;
+            background-color: white;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .contact-form {
+            width: 60%;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .contact-form label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            background-color: #ff9800;
+            padding: 10px 20px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        footer {
+            background-color: rgba(44, 110, 73, 0.9);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        footer a {
+            color: #ff9800;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Green Harvest NPO</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html" class="donate-btn">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to get involved? Reach out to us!</p>
+        <div class="contact-form">
+            <form action="mailto:info@greenharvest.org" method="POST" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Green Harvest NPO. All rights reserved.</p>
+        <p>Email: info@greenharvest.org | Phone: +27 123 456 789</p>
+        <p>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+            <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+            <a href="https://www.twitter.com" target="_blank">X (Twitter)</a>
+        </p>
+    </footer>
+
+</body>
+</html>

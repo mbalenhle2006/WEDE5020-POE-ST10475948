@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Harvest NPO - Programs</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Explore Green Harvest's programs focused on sustainable farming, community gardens, and farmer support initiatives.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #2c6e49;
+            color: rgb(242, 247, 242);
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: rgb(178, 197, 167);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .programs {
+            padding: 30px;
+            text-align: center;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+
+            background: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAtQMBEQACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAACAwQFBgEAB//EADoQAAIBAwMCBAQDBgYCAwAAAAECAwAEEQUSIRMxBkFRYSIycYEUkaEVI0KxweEHJFJikvAz0TXC8f/EABkBAAMBAQEAAAAAAAAAAAAAAAABAgMEBf/EADARAAICAQMDAgMIAwEBAAAAAAABAhEDEiExBBNBIlFhcYEUIzJCkaGxwQXR8PFS/9oADAMBAAIRAxEAPwC1jWvaZ46HqlIoYsdKxjVSkxjVjpFUMEdKwoIR0rHR3p0WB3p0Ae6dIZ3p07AFo6LED0qdhR7pUWFHOlRYUcMVFhQJjosVAmOnaHQBjoFQJjoCgTHQKgDHTCgClAjix4q7JSJCL7VLGOVKmyqGKlFjSHolSMMJ7UrKSGBKVhR3p+1Fjo70/alqCjvT9qLCjxj9qLCgDH7UJhR7p+1Owo90/alqCjnT9qLCjhj9qLCgTHTsVAFPaixUAU9qdhQBT2osKBZPaixULMdOwAKc07FR1Y6LFQ1Y6LHQ1VpWOhypSsdDVWk2NIcsdQ2VQwJSsdBiOlY6C6VLUOjoio1BR7pUtQUCYqdioEx07Cj3TosKOdOiwo4Y6dhQBjosKAMVFk0A0VOwoAxUagoAx0WKgDHT1A0AY+aNQqOJHRYUOSPNFjoYsdFhQxUpWMaqUmxj0WpbKSGrHmobKGJFUWVQzYAOTiiwo90qVhR7p07CgGj5p2FA9Kiwo70qNQUcMVLUKgDFT1BRwx09QqAMVGoKAMVPUKgTHTsKFtHRYUAY8UWKgDHTsKOLHS1BpDCUagoYq0agoYsdLUOhirScgoYqnyFJyHQ9BUtlJDO1TZaRCkujJqsNjH3RDPL7Dso+5OftWDyrudvzyHktFXPNaWVR0x+1GoKF9M57UahUd6dPUFHuk3pS1BQJiPmKNQUCYz6U9QqAKH0p6goHZ7UahUCU9qNQUAye1PUKgDHRqDSLaOjUKgDH7U9QUcVBS1D0hhBRqCgunRqFQSjHenqChgA9RSsdBjilYBg/nUtlpCb7U7GxhkkurqFNilirSAE49qynkUVY7S5ZkfDPinR0v7261K+EVxcyAK0inaFHYbu1ed0mX1Slk2b/AIM45YXyb6zu7W8i6lpcwzJ6xuCP0r0VNS4dmypkkgetFjoX580WFCby8t7G1kuruVYoY/mZvKplOMVbYnS3YrT9X07UjiwvYJ2xuKo4JA+lNST4YoyjLhk0r61VlUc2j1FFio4U9qLCgGQUagoWyAUWKhTJRqCgdgHnzT1BQJQUtQUAU5o1Co5+Hpax6T3S2+VPUKiNf39pp1u1xezpDEvdmPc+g9fpSlNRVsUqirkVlx4o086aL6zjubyFm25ggYgEd8kjApd5VaIc1p1JWJ0fxjpWpXiWaGWC4k4VJUxk+me2faiOdS2JjlhKWnyaS4lgt4GnuJEijUZLscAU55FBW3wbVXJhNf8AEt5qZew0CGZ93GYl+NgfP/aK8vJ1eTPLTi2RjkyOqhyZ288J3Fjc28V1cCa/ucM9vCucEngbs8nvnipyz7Uljirk/L8GD6Zp+p7n1vRPDunadYwQLZWzSKgV5DEpLHz5+tehCFKnyehGKjGkevrLw9YTfibg2lhPjiWNxC5/LGf1pT7UeXQrSPnuuan4jgZpINTvZdOdiIZ2i6W8fXaP715ubNlXLdeGYTlO+diFpWv6pFIWOoXGf90xfP2Nck8+aG8ZMUZyXk0Fhq51XU4IvEX7zToSGWVVCosh7dbHl5A8DJ5rt6bqPtCTy+P0LbUnvwZ62EmheLnaH4Gt7wr6Axs38iP6Vk5PFn+pzqOido+1AdwR2PFe2d57aPQflQFniAB5UAV2qaxpulxJJfXMcau21R3LH6Dmoc0iZSjHkorPx3oVzK8Uk5t8E7GmXCyAeYP9DWC6mN77ERz426K6/wBS1/UCr2c9hpVtKR0fxMiiVwexx7+lYyyZZctJfuS3klw0grTwprckvWvvEk4fOVEAPf3zxj7U44p3bkxrBk5lIsLpvEmnqWigs9Uj74XMEv5cg/pXQ5NLbctrIt1uVUP+INgm6PUrW5srpDh4Xizj+VZfaK/EqMn1MI7SVGsBZG2s2a21HXR2RgoJYjA5JPlT1UFHzxrQeLNblur3qtpludqqDjfzwB6Z7k/auLFeeblLg5Hj7s9+EbC01DS9PtFhgURRRDCxqMAV6EYeEb7LYr9UOi6xblpodk68x3CfDIh8iD/TtTl07e1ESUGim0V1udWGmeIXkuyvxWjyyMFkX6cAn65rkeFRloyu/b2M4O5aZG8SKz063YwxRQRKpJ2qF4H0ra441dUdSjWxjPC15He+J7/U7o5aNcLn+Esew+gXFef0erJOWVoxxpSyNm4n1S1trGa6kmHThQs+PQV6MsihFtmzi1uZvw14Zkvrg614hQyTyv1YbZ+0YPILep9B5Vy4OmTl3cm7OdQ3tmzngjmhMUqI8ZGCjKCD9q7pKLVMswXjzwpbR2BvtJtFimjb96sWcMvrt7DBx2rzer6eMY6oRIyRtbGV8FXRTXrUXLAwzEwSq/yurDGD98H7VyYGoZVXDIxR9Q/VbAaXrypLuMKXfSLMc5QFWQf8Dj7VeXHpyb+H/wB+xqsDluj7EFOSTXtllX4l1iPRNONww3SMdkSere/sK5+p6hYceryJtIwel+KPEOr6pDpsM0O2ZsPKsADKn8TDnHA7cd8Vy4eoyT9M+WYLJOUtMeDbadoGkaRGzQ20QOMyTzAM59SWNdMYQxrZHRGKXBFurLTfE9s0LWoayT5J9u0s3qh749+x9xUNQyIbjGSpow+o+DL/AEt3NrCbqDyeL5vuteZm6fKn7o5JdPKLtbk/wr4oe2f9nai7iMfAGb5oT758v5VWDqJQemfHg1w5vyyN3byOcw3KgSDswHwyDyI/qPL6V6CkzrI1/pOnag6te2lvcMgwpljDEVL+I9KfKGBopLlJEkDBouAPMZzmlrV0XpdCdYtZL+E2UTGFJB++lHdV8wP9x/T8qJvUqTM5K1RJtLC2tLdLeCFUjRcBauLUVSGkkqQibTLeRyTEOfatVlaBxRnta0g6bcRahaxPPZji5gAyVH+pf6ipn1U8fqW6IlBXwSdYjsNY0NY7VFKSANBOv8DeR/761SiuohyTkipQ+Zg7rxZqFlptzZX7FpFVohuPxIw9/McedcH3u+FnJHPKKcZD/Ak92bd0t7PrdV2kaZmwq4wAM+fINd/SvtrSkV0yfBb2M8ut6y05/wDjbLB6ecq0/PzeuMGoaWaVvg6oJzl8DYWWtSzMkaxyO4GSVQ4onNx4OjtRq3sdtvEL3V+1lEqLOh+KOU7Gx7DzrN9RLamDwQStlb/iLqOoaXBaXVjN0WO6N/POcfqKzzTlHNHubWjDjG3H3Ku+8OPr2kw6tY28dveMgcrGcCQ+p9/euTRPLB5Iq6/UuUMfybMxd6ndXCT2mrIDcdRMs/DoyKVB/I9/pWcskmve6/YmOSWN1I+tafqkR0C31C6kCJ+HDyEntgc16y6iGm7M/ifPPEutr4o1qzs7YNHarII1Yj4mLEZOPpXJlyRyyXsYSep0b7SND0/RoybOIKxHxzOcu3rk/wDRXQnGPBvGCjwV8/iTSb3UBYQQTajKvJWFN0Yx5nJxwfOl3oydci1xctKDvbrxDLkWNrZwR44aaUux+wGB+tRPJOqjsaOM3wRrfUPEdorftLToLyIDPUtHw/8AwPf7GiM5Jbi9ceaZXy6p4e8UyrZ3CSQ3TZWN5E2SA+gP9DWWSUJ+lolTxZdvJeWVm8emjTbuZpGiUKJVyrbf4W9jx39RWkZUqZukkqKOLxHc6TPcWGsQPcSQvhJkAUyL5E+X5Vzy6rQ6kQsunZlKuoarb3EmvQlFsElFu0ZH8Gf4foe9Yxyt+qv+9g7s29f5f6NybqMQRXDTkJJjB+vlW/fVJs60r2SId1qtzcRyDRijrGdrTsMqWPAVfU5xk9hUzzyr0kxhF+TP6nqNispstR1e+udUAyY9ODYQ+wXj/kauKc92Yzz470bt/C/6/sCw8QfsXS5Ybi41OJyxPU1CzZwR7lQRj71rDGqauiFlgo20/rf9D4NZs1jW7s3j/ASHFwqHKxSHsw9Aa0g44GpJ7PkHmjNak9jGf4lwJLP+Mt1/csVjaRTwX25/l/KlHKs2VyituPmceeHq1Gq8EzKngqGWFSDHHIXzwAQTn9a378Yw0nd08Pu0wrVY/Deh2xvQgQrifaeXYncPyzj7VglHHLU/JtCPbxKwE1bXNRbqaRara28f8dzhc/bvis8uZmsVKVaVt8SXJpXiO+tYriZbIk8oyKS32JGRXn5c85QUnF0+Pj8jVTgm4uRR+I9S1YJHYa5iTonKsvJHsfXis4SeX8z28MxyYkoemt9zWaNqUFv4etIrOWe+l/02veP6+mPejudqKV1J7/IlR33W3G/kzXj+yuriCDW2tZIsjZIxXBI/hLe/l+Va4smTI/vI17P3M+oxY0vQ7IGna1JdeGLjTmfASZT9Fxkj7nFTk+7dVycTl6KLTwJokt3qg1WcdOwtSWEr8b3Hp7A559q6sOJyVydJE441uy31OTUvFFw9tpAeHTQcPPJ8Kv7+49h96yeqbel7Gk5Snsiy8M6Ja2EMsFpNumV/30n+v0x7e1PDk1XFeDqjjj08VS2ZpEjEaYcgj1NdGuuTNvU9gbi7t7WHqzyRrGONxNU8qSEoSbpEC7s9Gv3DXEFtJIy7g4GH+oYcj6g1LyY35K7MvKMX4h0fU/D0r6lp99czWnmplJkjH/2H61hki/Do5ckckPVFkGz1zTNaTqazdzpJGAEkiQfEPQ8eR/nWejxlFHOsq9WzRay3Fhf2LaPBPJFDs28R7gW/0Dyz71lHJdK9uT0pducXBcGW0PWb9bf8EF39GdkjEpzswCO33quoik/3PP6fqMkU4clvr1xcCGw0Dw6Qskijc6sRtH1/PJrXDTWqZv1eSWtYMP1JuhJHoVtd2MMqrLAivLcFRlnI5HuPT61jl6iTfpN+nhjxpwfjk0MuqTz2YB6fXVQwGM8nj8qf2qUonVDBFStGX8VW9jpStcW9qGM8TLdxqdqNkdwMYzVrM3JQb5OPOo4vU487f98TNaZp02p+GNQ6t08kVtGJUj8i47n644+9dGPLpzaUqOTFi1YZOx/hqZrfRLC1lLi3kuHklHdW2OT/AGP2rHPkrLP4V/BpilUYRlwa8v8AtRLbU76GIAn/AC8Mh+Q+TN7+3lXJl66UHSVnqYcMciV/MnX8cY0uS9s4xISpSdC2CT/auN5XP1XzybQlNZO3P6F9pGoWZtlt1kzNEgyh4J+let/i+u6bDhrJs1dX5+R53VdPkU3KtmUXjLT4NYsLi6iXE1tGRhe5I9fpXBk/yP2jqO7COlbX7/M0xRlCOiXngqhPHdJpv7DLW+oTQh5GXiObZjhvfPnVPLFxUHHjZv8AgqWOW8r53RLvNabV9JuY7wxqwToz2gHxBzwOPr2qsvUdTkyLU9vAscMKxvb1HzawWSGSeCddskQKyjzJFdudppNHjTtNpm70yW7/AGdollcqo0zbmeQHI3EkhT+dc0p8pvY9TDjemEq8f+FvqYhkuREs7x2yuq7YnI6meOawlP16VwjtxwaxptblT4n0y/8ADlj+L0e5maIE8KNzYY859h5YrqWKp78P6UcOXJN4rx8r62aqx1GC80y1uGlR1kQEnv3qlLamyowcvVHgzfjjV9OitVt1uYjiRHe3HLMAwJ+lU4zn+BbEZM8MUam1f9WMTWPDuq2IgMyJ1GBL79jRj68Y7UnBwpSj9TVdTjyO4zT+AWpX8Eltb2RukuonuUWK4icNuGezEdjUZFL8HNESeOaT92kRfEng2zv70XGnzNZFh+9Cx7lc/wCoYPeupzS2aswn0KyvVdGPfxZpV9ZRA2bwm3ACtGQeah9FNOlyyp5ITik1wVtrNb2921wNwgdnLepyOKWSEpQ0+UebBx7j9i+tNc0y0W4/HSzfiHkViYyR0owAFwPTjJxT+zTyY0kdmCcEpOV23/BCvprd7i5Y3UnTkUMCSeRWKhJNRrdMwlUpOnyWNv4rtYp1kaZWBgEZLfCT6GpfSZINqj011Dg1KXsFqXiG11XTTbTArIeEYchvvULp8sWpPwY5uoWXG40RdF1eHTdKlsZUYG4BD/D2BGAR69q6pQ1PWnTTRhhzdqGlr8RX6DNDHavHPNtwHWIn5VJbJP6n9KfVRlKVxXsLplFrTL2pfCzTW+vQDw+1pO3xH5XHkfavMlinrpLyeh0+daKb3SaCg1m2XT/w/UZnCfHvz8RrKXSZHNyS2OzFniopvlIPSdbtLKaOTYOqoAZm+lLJgySdxK70M0ND2JdjrtrDd3zyTIILnnJbjPn3qezk0pVvwVNRlpje6KvT7pbKWZVliNpGG6DYyQWOcCt54+5FOvV5OVZo4sjhL8Iy+vEj1O21WxdJpYx++TAOR3/Mc1eFSS7cvoZdS4xmssPr8ipk/DzeOpxvU2s3xO5I2njPf7V3ON4Pijhkoy6vSy38Nazaw6e+lTXaOqSHYpA5Gcgj9a58sZ3vHZ/ydnSZIQ2k943+gGoa5Jc/iI7CFlgjwxkLKpJBzlQTyKawR/8AqvhQT6yU70LZeX/XuWuk6/a38E1p1ZI7hlB/zK4KHuPYj6GlGLhHRLdPyVDqYZN1s0UllJLPD+zBLHbxQ7pJ7gEhSck4UZ4HNaRUXJ5OfgcmLLLL90tkuX/onRw6fBbS2gtba4heLe0jH4gfY1Ky53bZqsWOK01sRtRi0qLR0spDBHLahZC0aD962P7mqc8knyYzWJQ0eUBLZ6DdWKfg7j8DqWA2+N8K5Hbcvyn9DWmPqHCKTVjeHFKNp0yOniO4gtYIfEF1cwFV/cyWQJEo7Et5g8D866opTWqPk5u/4zN2vbyfK4bZQzDmOPsWHrXsu7ujTjcu4tSFtpbQOrG4VDscr8LHsK86fRyll1/lMlialYu/vJJL1b63gZojGqEsp+L4QDx9c104MThi0S53NlFJHbi8uJrFLV1Cgcqx4LD0pLpoLJ3HyJQV2RJv31vHtj+NFx83etYQ0tv3L5G2Ml0kyJJGXtc/EA4x9R70ZIWnXImrLC/1OGC+VlnkmEg2kYJ6YHy4/UY+tcv2ZyxaWqaIyQuFFjYW+22McuwrlkbJ8ztOftiueOZRyaa5MFOUU0uROoG6tRFFEo2OmD545q8EIZJSnw1sdXTzbjb5IUdy6Fj1WLep7fnXQsMYqqOlBytdrIWfflsMR6jyqFhitkjRSpA3Vy+1YlVthGcZ4JpxwpSsJTJMeoRwaPHLEjqySgtubzz+nFZTwrJNp8UcrkpZNyBcag7OZbacriTqgqfPNdEMCikmrLcl4Hl5ZdLuL0ozOI9qxqMA8jNc+jRmUfBwtKOVEq5nFho0AZFiunTPTHzKucjPvSjhU8zknaLbU5fBFVa3JkZ2vJGiVfi2g5L+wFdc8aiqgty5JpUjTW0kw0i0v4pVjcyrFGj8dRc4I9z/AOjXk9TDGsjw1aSbb9jLKnSrkqdbmZ4rbqPtk6khkj3YxgjiuzpMSuTS2orEqbRTpcyNcgH4E3jPOdorsWFVTNGTb3VCjywQS74twKsR3rP7HivYlRRHgt7m+uljsxiQDPLY48617UYqqKSS4Jt/r01tFb29lCJzGpEksqk7j7Dyrgj0GuTnk2vhIhRXJUwWk86gpNbcg4zKoOPPg16tlikimtysVyxAB4DYbP5UADLcmBm23ReE8JxjZz6GkV4Ex3073R6cm8LggsBn7U2hJ0SGeRkLwliqgsw2ggeuT5Uhiljnj3re3LQuFDKqxl2Ge2QCAD98+1JNPgjU/CJV3YT29ktw03XtpR8M6LtI9d3p/ahNXugjJvlUaG7mxabFxvkuVCrnllxlj9AB/KvJjCsrk1sk/wBTmg6tvwRfEN9NZ3Vr+FkcS9BiUU44J/tWv+OTcZX7mvTP0NlPHc3U8yPImIu+C3I9816FUdSkNikkeTLdZgT3bsD7GporUS5bSUxGXohk+feeFAzy2TxihtLkTZE/G6eEZJUuLiQHdtjk2I30GCT98U1GvFGbb8HOhDegixiJmUE9KT4dy+e0+f070W09ydTXJofDgiS0jAO5SzOVIwRjH/rNef1qfcVeUYZ/xJoolN7qN5IZE6jtuk+MgKqDzJPHAxXetGHGl4R0JUqPWk0bTRmZHaA8F49uVPkB61o1QE7WNVhuZYLexJEFiqmB5Ds3MOWLL5Z9B61y4sCWuU1vN7/LhIK5KXV4OtrE93by7opJS6E7vlYk4+2cV0YvTjjFrhV+m37g+SOrTdhIAByFCgE/eqESYZLd4kMiyJITkSbhhqYEafUn6yLZPL1t3DR8N9qKrdibDkjuzIXu7Z2duc7GyfyFJZIS4YlJEc3bqAJEDqowuaqiiUFiCQyvNHtAzsViz/emNMReC2nINvE5OfmeTkfaktgbTIxhlWRYsAh/lzwaBD3WVAAxCMowAMjNIY46nPhFkAkx25yTQOybHqEzBIp5+CCCjngg0g5J8EolmjaRMiA4DFsnB8ufoKwyYnKLjHyZzwqUWkVWuyTXl29wIztA2hWAbAA//afTYu1jUAhj0RUSGhcKf3WRycsCP+/SttjQbJciP4Qo2eYZSM+xyaEgbJDajGLdYrdSdxzMsmSuBkBQPQAk/f2qFjblcvoGoiHVHUO0cMQJ74JU49BWiiJzOfj55F3oLiMDBGMsAfUHyNOkTZb6dqbJI8kzKXmXa2D2yMZ+prmlhTa+BEsSlQm1ultNCuoIQJHuiqEggssa/MDjtk/yrSUNU1J+DRt2Ro4XWHfLCRGeQxPyn/vrV7DSGLE7koE3EdgzfKPPy9qYANFOykwBNqA7xuA/rQFEaa0Ytl5O4BGwZ/WgVHoY2inWWQCVM/8AjBOSPTPlQ91SFROuLmYq0UEZtbc8n8Kmw5/3Huayjhincnqfx/1wLQvJXxQxvkSyyBl7/Hya1Q6QoJiMyPJHnseeTVARXXazEMMHlQPOgDqMRIr9Qbh2U+tAEl/xElx1JTn6jgUDCMpIRXRSGPHxZpUMenTEqqYYzxxk0gEmFJpXVMiRRncOwI8qBnelcSNm2kZBjDZPFGwmmSbezkch2nBfhXG7vSGOmEsbdOdFlWPlWQ4wPfFAwTCWiGB1HAGQxI5z3GOaYMACyaDlDvJ+JcE5PoDRuLY8PwyspjKowPybQRj39TQIOTnclzNGFb5WQEfnQkBGlit3aWSK4iLAchcrkD+ZpiHhI0iRUkjXdyUP/e9IYy268XUj4kgYHD8jafKmAYMysheaORWGCA3Y+9IBCyAf+NlVT8wJ7HzxTEM2HoqC6gZChmJJH0oARKiIWWOM5U9gTk0COi8uOkUwojB5yP60DIyWyyMzidTk+tBJDimQy8r8P8qdBY6WOKNO7FicjFAxaBVYMUwMZye+aAGNO0yhgvI7+9AHFETyKzK6SH0oGSHjVPiLFiOfekM8JFm5WMoSPnPtQAMckkYCmRQP9THilQWMivjCpjkiUtnPHnQ0NMKS5gYmbpsrYwQCaAJWnm2BQAkyNyBgY45xikCETFhNcTGRTk8xou3H0piBeVJ1RIAIp8jaDzu+p8qEHyEyNcySmK8YKqHk4p0I61rbMP8ALSdQ5+LJ8qACZB18qVUIPhXOaBgz3u6MLLMzN32DtRQrEQySPMzo+1W5Ptim0KyZb2sU/UcSguBxk/N60hiZoWml3IWEYHcHt9jQIB5nhPT67up4JYcj70wAhSaedY4X5Pm7YGPegCXDCCp6gAIJxtPBpATtD0Nb1XdfhJqJSaLjFETUtOmgl6Y3Lt9ec1UZEuIj8G5X95ll/lVWFDejG6gRsFI9KQxCQTg9RzuCnHagVDZWLgbEGQeTQMXKTJHsB2gHjFACnH+XaNizA+9AjsQUgbwMY8+9MCSjOyEooJUZpDIn4mUrlAOqv8WfKmIV1uqpLysJT5jzoENsJZUk5Px+RNDBEvUYbk2odow7NjLr3xQhsVaSJDblCdshGDxQAJuX37SNpxwR50gIbqHmzJxnuRVITGWvwyMinaMUMSHTsVASObAI9OaQxTI5dU6pG7sfWgCSASFjiJ3gckigAVt3jciZwxPlQALkg4SRto7YHagC80e9ntciJuPQ1m0XFjdWuHd8tjJpJDYqI/5aXgdqbAzzMUnypIy1aVsRZZW8zmBlOMYqRhNGuMcjNMRHaJesqc7TQMdsVXVABgmgDt7bRmPOCMDyoEyBDI8LKqHgnkHzp0A+GJGMnGPi8qBkh7G3EZfZzg0CKZSRcDk98UxeS/gnf8MXOCV7ZHakMrtR+KMy4G/1AoQMiuxWJXB5p0AxF6gYMxxQSLeMB1wTzQCFOzCXaDxRQMlhOVOT3pDJm8xsNnHFIBM5Mke9j8XqKYCEJQcE8+tMVn//2Q==') no-repeat center center;
+            background-size: cover;
+        }
+        .programs .content-wrapper {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .program-card {
+            background-color: #e8f5e9;
+            padding: 20px;
+            margin: 10px;
+            display: inline-block;
+            width: 30%;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #2c6e49;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        footer a {
+            color: #ff9800;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Green Harvest NPO</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html" class="donate-btn">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Programs Section -->
+    <section class="programs">
+        <div class="content-wrapper">
+            <h2>Our Programs</h2>
+            <p>We are committed to empowering communities through sustainable agricultural initiatives. Explore our key programs:</p>
+            <div class="program-card">
+                <h3>Sustainable Farming Training</h3>
+                <p>Workshops on organic farming, soil health, and water conservation.</p>
+            </div>
+            <div class="program-card">
+                <h3>Community Gardens</h3>
+                <p>Establishing urban and rural gardens to promote self-sufficiency and nutrition.</p>
+            </div>
+            <div class="program-card">
+                <h3>Farmer Support Fund</h3>
+                <p>Providing financial aid and equipment to smallholder farmers.</p>
+            </div>
+            <div class="program-card">
+                <h3>Agroforestry Projects</h3>
+                <p>Integrating trees into farming to improve biodiversity and soil health.</p>
+            </div>
+            <div class="program-card">
+                <h3>Educational Outreach</h3>
+                <p>Teaching youth about the importance of sustainable agriculture.</p>
+            </div>
+            <div class="program-card">
+                <h3>Market Access Program</h3>
+                <p>Connecting farmers with markets to ensure fair trade opportunities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Green Harvest NPO. All rights reserved.</p>
+        <p>Email: info@greenharvest.org | Phone: +27 123 456 789</p>
+        <p>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+            <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+            <a href="https://www.twitter.com" target="_blank">X (Twitter)</a>
+        </p>
+    </footer>
+
+</body>
+</html>
